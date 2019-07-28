@@ -6,16 +6,15 @@ public class ChatBot {
 	String choice[] = new String[12];
 	static QuestionList ql = new QuestionList();
 	UtilityFunctions ufun = new UtilityFunctions();
+	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-
 		String features[] = new String[10];
 		String details[] = new String[4];
 
 		ChatBot obj = new ChatBot();
-		// details = obj.defaultMessages();
+		details = obj.defaultMessages();
 		DatabaseConnection db = new DatabaseConnection();
-		Scanner sc = new Scanner(System.in);
 
 		for (int i = 0; i < 1; i++) {
 			System.out.println("\nC:" + ql.getQuestions().get(0).getQuestion());
@@ -83,19 +82,10 @@ public class ChatBot {
 	}
 
 	// ---Scanner input-----------
-	public String input(Scanner sc) {
-		String value = null;
-		for (int i = 0; i < 1; i++) {
-			String choice = sc.next();
-			if (ufun.choiceValidity(choice)) {
-				value = choice;
-			} else {
-				i = -1;
-				System.out.println("\nC:" + ql.getQuestions().get(8).getQuestion());
-				continue;
-			}
-		}
-		return value;
+	public String input(Scanner sc, String print) {
+		System.out.print(print);
+		String choice = sc.next();
+		return choice;
 	}
 
 	// ---------getInput-----------------
@@ -103,13 +93,15 @@ public class ChatBot {
 	public String getInput(Scanner sc, String[] array) {
 		int a_size = array.length;
 		String ch = null;
-		System.out.print("You:");
-		choice[2] = input(sc);
-		int c1 = Integer.parseInt(choice[2]);
-		for (int c = 0; c < a_size; c++) {
-			if ((c1 - 1) == c) {
-				ch = array[c];
-				break;
+		choice[2] = input(sc, "You:");
+
+		if (ufun.choiceValidity(choice[2])) {
+			int c1 = Integer.parseInt(choice[2]);
+			for (int c = 0; c < a_size; c++) {
+				if ((c1 - 1) == c) {
+					ch = array[c];
+					break;
+				}
 			}
 		}
 		return ch;
@@ -122,18 +114,23 @@ public class ChatBot {
 		for (int p = 0; p < 5; p++) {
 			for (int i = 0; i < 1; i++) {
 				System.out.println("\nC:" + ql.getQuestions().get(p + 3).getQuestion());
-				System.out.print("You:");
-
-				choice[5] = input(sc);
-				int c = Integer.parseInt(choice[5]);
-				switch (c) {
-				case 1:
-					parameters[p + 0] = "Yes";
-					break;
-				case 2:
-					parameters[p + 0] = "No";
-					break;
-				default:
+				
+				choice[5] = input(sc,"You:");
+				if (ufun.choiceValidity(choice[5])) {
+					int c = Integer.parseInt(choice[5]);
+					switch (c) {
+					case 1:
+						parameters[p + 0] = "Yes";
+						break;
+					case 2:
+						parameters[p + 0] = "No";
+						break;
+					default:
+						i = -1;
+						System.out.println("\nC:" + ql.getQuestions().get(8).getQuestion());
+						continue;
+					}
+				}else {
 					i = -1;
 					System.out.println("\nC:" + ql.getQuestions().get(8).getQuestion());
 					continue;
@@ -145,32 +142,27 @@ public class ChatBot {
 
 	// ----------Default messages--------------
 	public String[] defaultMessages() {
-		String details[] = new String[10];
+		String details[] = new String[4];
 		int greet = (int) (Math.random() * 3 + 1);
-		Scanner sc = new Scanner(System.in);
 		if (greet == 1) {
 			System.out.println("C:Hello and Welcome!!");
-			System.out.print("You:");
-			sc.next();
+			input(sc,"You:");
 		} else if (greet == 2) {
 			System.out.println("C:Hiii!!!");
-			System.out.print("You:");
-			sc.next();
+			input(sc,"You:");
 		} else if (greet == 3) {
 			System.out.println("C:Hi there! Welcome to Philips!!");
-			System.out.print("You:");
-			sc.next();
+			input(sc,"You:");
 		}
 		System.out.println("\nC:Please enter your name: ");
-		System.out.print("You:");
-		details[0] = sc.next();
+		details[0] = input(sc,"You:");
+		
 		System.out.println("\nC:Please enter your contact number:");
-		System.out.print("You:");
-		details[1] = sc.next();
+		details[1] = input(sc,"You:");
+		
 		System.out.println("\nC:Please enter your hospital address:");
-		System.out.print("You:");
-		details[2] = sc.next();
-		sc.close();
+		details[2] = input(sc,"You:");
+		
 		return details;
 	}
 }
