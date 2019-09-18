@@ -26,41 +26,45 @@ namespace chatbotrepo.Controllers
         #endregion
 
         #region Methods
-        public void Get()
+        public string Get()
         {
+            string ques1;
             var QuesRow = _question.GetById(1);
-            Response.Write(QuesRow.question + Environment.NewLine);
+            ques1= QuesRow.question + Environment.NewLine;
             var  list = QuesRow.OptionsTbls.ToList();
             foreach (OptionsTbl opt in list)
             {
-                Response.Write(opt.option_id + ".  " + opt.option+"\n");
+                ques1+=opt.option_id + ".  " + opt.option+"\n";
             }
+            return ques1;
         }
 
         [System.Web.Mvc.HttpPost]
-        public void GetLink(OptionsTbl options)
+        public int GetLink(OptionsTbl options)
         {
             var OptRow = _option.FindWhere(options.question_id, options.option_id);
-            Response.Write(OptRow.link_id);
+            return OptRow.link_id;
         }
 
-        public void FetchQuestion(OptionsTbl o)
+        public string FetchQuestion(OptionsTbl o)
         {
+            string fetchQues;
             var QuesRow = _question.GetById(o.link_id);
-            Response.Write(QuesRow.question + Environment.NewLine);
+            fetchQues=QuesRow.question + Environment.NewLine;
             var list = QuesRow.OptionsTbls.ToList();
             foreach (OptionsTbl opt in list)
             {
-                Response.Write(opt.option_id + ".  " + opt.option + "\n");
+                fetchQues += opt.option_id + ".  " + opt.option + "\n";
             }
+            return fetchQues;
         }
 
         [System.Web.Http.HttpPost]
-        public void MonitorFetch(OptionsTbl o)
+        public string MonitorFetch(OptionsTbl o)
         {
             var m = _option.FindWhere(o.question_id, o.option_id);
             var monitor = _monitor.GetById(m.monitor_id);
-            Response.Write(monitor.monitor_name);
+            return monitor.monitor_name;
         }
 
   
