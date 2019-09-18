@@ -1,0 +1,6 @@
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\OptionTable\bin\Debug\OptionTable.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\OptionTable\bin\Debug\OptionTable.pdb
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\OptionTable\obj\Debug\OptionTable.csprojAssemblyReference.cache
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\OptionTable\obj\Debug\OptionTable.csproj.CoreCompileInputs.cache
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\OptionTable\obj\Debug\OptionTable.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\OptionTable\obj\Debug\OptionTable.pdb

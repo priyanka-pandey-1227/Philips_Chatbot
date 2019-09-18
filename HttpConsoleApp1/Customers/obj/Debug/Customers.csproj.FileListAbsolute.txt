@@ -1,0 +1,28 @@
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\Customers.dll
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\Customers.pdb
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\ChatbotCustomer.dll
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\CustomerContract.dll
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\Newtonsoft.Json.dll
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\ChatbotCustomer.pdb
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\CustomerContract.pdb
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\Newtonsoft.Json.xml
+C:\Users\320053944\Documents\webapi\Customers\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\320053944\Documents\webapi\Customers\obj\Debug\Customers.csprojAssemblyReference.cache
+C:\Users\320053944\Documents\webapi\Customers\obj\Debug\Customers.csproj.CoreCompileInputs.cache
+C:\Users\320053944\Documents\webapi\Customers\obj\Debug\Customers.csproj.CopyComplete
+C:\Users\320053944\Documents\webapi\Customers\obj\Debug\Customers.dll
+C:\Users\320053944\Documents\webapi\Customers\obj\Debug\Customers.pdb
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\bin\Debug\Customers.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\bin\Debug\Customers.pdb
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\bin\Debug\ChatbotCustomer.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\bin\Debug\Newtonsoft.Json.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\bin\Debug\ChatbotCustomer.pdb
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\bin\Debug\Newtonsoft.Json.xml
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\obj\Debug\Customers.csprojAssemblyReference.cache
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\obj\Debug\Customers.csproj.CoreCompileInputs.cache
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\obj\Debug\Customers.csproj.CopyComplete
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\obj\Debug\Customers.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Customers\obj\Debug\Customers.pdb

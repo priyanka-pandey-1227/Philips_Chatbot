@@ -1,0 +1,6 @@
+C:\Users\320053944\Documents\webapi\CustomerContract\bin\Debug\CustomerContract.dll
+C:\Users\320053944\Documents\webapi\CustomerContract\bin\Debug\CustomerContract.pdb
+C:\Users\320053944\Documents\webapi\CustomerContract\obj\Debug\CustomerContract.csprojAssemblyReference.cache
+C:\Users\320053944\Documents\webapi\CustomerContract\obj\Debug\CustomerContract.csproj.CoreCompileInputs.cache
+C:\Users\320053944\Documents\webapi\CustomerContract\obj\Debug\CustomerContract.dll
+C:\Users\320053944\Documents\webapi\CustomerContract\obj\Debug\CustomerContract.pdb

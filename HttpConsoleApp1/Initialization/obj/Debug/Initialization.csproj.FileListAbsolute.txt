@@ -1,0 +1,13 @@
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\bin\Debug\Initialization.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\bin\Debug\Initialization.pdb
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\bin\Debug\Newtonsoft.Json.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\bin\Debug\OptionTable.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\bin\Debug\OptionTable.pdb
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\bin\Debug\Newtonsoft.Json.xml
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\obj\Debug\Initialization.csprojAssemblyReference.cache
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\obj\Debug\Initialization.csproj.CoreCompileInputs.cache
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\obj\Debug\Initialization.csproj.CopyComplete
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\obj\Debug\Initialization.dll
+C:\Users\320069332\OneDrive - Philips\Desktop\Phase1Chatbot-master\HttpConsoleApp\Initialization\obj\Debug\Initialization.pdb
