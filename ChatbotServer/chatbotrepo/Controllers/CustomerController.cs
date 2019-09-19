@@ -25,12 +25,14 @@ namespace chatbotrepo.Controllers
 
         #region Methods
         [System.Web.Http.HttpPost]
-        public void SaveCustomer(CustomersTbl customer)
+        public string SaveCustomer(CustomersTbl customer)
         {
             if (customer.name != null)
             {
                 _customer.SaveCustomer(customer);
+                return("Success");
             }
+            return("Failure");
         }
         #endregion
     }

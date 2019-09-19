@@ -13,6 +13,7 @@ namespace UnitTestProject1
         private IDataFetch<QuestionsTbl> _question;
         private IDataFetch<MonitorsTbl> _monitor;
         private IDataFetch<OptionsTbl> _option;
+        private IDataPost _customer;
         #endregion
 
         #region Default Constructor
@@ -21,6 +22,7 @@ namespace UnitTestProject1
             _question = new QuestionRepository(new ChatbotEntities());
             _option = new OptionsRepository(new ChatbotEntities());
             _monitor = new MonitorRepository(new ChatbotEntities());
+            _customer = new CustomerRepository(new ChatbotEntities());
         }
         #endregion
 
@@ -149,6 +151,96 @@ namespace UnitTestProject1
             string expected = chatbot.MonitorFetch(new OptionsTbl { option_id = 3, question_id = 12 });
             string actual = "IntelliVue GS";
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [ExpectedExceptionAttribute(typeof(NotImplementedException))]
+        public void GivenQuestionId_WhenOptionRepoGetById_ThenNotImplementedException()
+        {
+            var expected = _option.GetById(1);
+        }
+
+        [TestMethod]
+        [ExpectedExceptionAttribute(typeof(NotImplementedException))]
+        public void GivenQuestionId_WhenOptionRepoDataFetch_ThenNotImplementedException()
+        {
+            var expected = _option.DataFetch(1);
+        }
+
+        [TestMethod]
+        [ExpectedExceptionAttribute(typeof(NotImplementedException))]
+        public void GivenQuestionIdAndOptionId_WhenOptionRepoDataFetch_ThenNotImplementedException()
+        {
+            var expected = _option.DataFetch(1,1);
+        }
+
+
+        [TestMethod]
+        [ExpectedExceptionAttribute(typeof(NotImplementedException))]
+        public void GivenIds_ForQuestionRepoFindWhere_ThenNotImplementedException()
+        {
+            var expected = _question.FindWhere(1,1);
+        }
+
+        [TestMethod]
+        [ExpectedExceptionAttribute(typeof(NotImplementedException))]
+        public void GivenQuestionId_ForQuestionRepoDataFetch_ThenNotImplementedException()
+        {
+            var expected = _question.DataFetch(1);
+        }
+
+        [TestMethod]
+        [ExpectedExceptionAttribute(typeof(NotImplementedException))]
+        public void GivenIds_ForQuestionRepoDataFetch_ThenNotImplementedException()
+        {
+            var expected = _question.DataFetch(1, 1);
+        }
+
+        [TestMethod]
+        [ExpectedExceptionAttribute(typeof(NotImplementedException))]
+        public void GivenIds_WhenMonitorRepoFindWhere_ThenNotImplementedException()
+        {
+            var expected = _monitor.FindWhere(1, 1);
+        }
+
+        [TestMethod]
+        [ExpectedExceptionAttribute(typeof(NotImplementedException))]
+        public void GivenId_WhenMonitorRepoDataFetch_ThenNotImplementedException()
+        {
+            var expected = _monitor.DataFetch(1);
+        }
+
+        [TestMethod]
+        [ExpectedExceptionAttribute(typeof(NotImplementedException))]
+        public void GivenIds_WhenMonitorRepoDataFetch_ThenNotImplementedException()
+        {
+            var expected = _monitor.DataFetch(1, 1);
+        }
+
+        [TestMethod]
+        public void Given_CustomerObject_WhenSaveCustomer_ThenReturnSuccess()
+        {
+            CustomerController customerRef = new CustomerController();
+            CustomersTbl customer = new CustomersTbl();
+            customer.name = "Test name From Controller";
+            customer.contact = "9090909090";
+            customer.address = "Bangalore";
+            customer.monitor = "Suggested Monitor";
+            string expected = "Success";
+            string actual = customerRef.SaveCustomer(customer);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Given_CustomerObject_WhenSaveCustomer_ThenReturnInt()
+        {
+            CustomersTbl customer=new CustomersTbl();
+            customer.name = "Test name";
+            customer.contact = "9090909090";
+            customer.address = "Bangalore";
+            customer.monitor = "Suggested Monitor";
+            int value = _customer.SaveCustomer(customer);
+            Assert.IsTrue(value > 0, "return value is greater than zero");
         }
         #endregion
     }

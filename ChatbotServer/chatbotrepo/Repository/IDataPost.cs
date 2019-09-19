@@ -9,6 +9,6 @@ namespace chatbotrepo
 {
     public interface IDataPost
     {
-        void SaveCustomer(CustomersTbl customer);
+        int SaveCustomer(CustomersTbl customer);
     }
 }

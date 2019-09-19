@@ -13,12 +13,7 @@ namespace chatbotrepo
         #endregion
 
         #region Constructor
-        public QuestionRepository()
-        {
-            _context = new ChatbotEntities();
-        }
-
-        public QuestionRepository(ChatbotEntities context)
+         public QuestionRepository(ChatbotEntities context)
         {
             _context = context;
         }
@@ -40,10 +35,7 @@ namespace chatbotrepo
 
         ICollection<QuestionsTbl> IDataFetch<QuestionsTbl>.DataFetch(int id)
         {
-            var question = (from m in _context.QuestionsTbls
-                            where m.question_id == id
-                            select m).ToList();
-            return question;
+            throw new NotImplementedException();
         }
 
         public ICollection<QuestionsTbl> DataFetch(int id1, int id2)

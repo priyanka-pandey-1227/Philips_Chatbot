@@ -14,10 +14,6 @@ namespace chatbotrepo
         #endregion
 
         #region Constructor
-        public CustomerRepository()
-        {
-            _context = new ChatbotEntities();
-        }
         public CustomerRepository(ChatbotEntities context)
         {
             _context = context;
@@ -25,10 +21,10 @@ namespace chatbotrepo
         #endregion
 
         #region Methods
-        public void SaveCustomer(CustomersTbl customer)
+        public int SaveCustomer(CustomersTbl customer)
         {
                _context.CustomersTbls.Add(customer);
-               _context.SaveChanges();
+               return  _context.SaveChanges();
         }
         #endregion
     }

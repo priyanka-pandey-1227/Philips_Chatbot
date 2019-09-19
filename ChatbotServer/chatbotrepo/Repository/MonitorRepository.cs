@@ -13,12 +13,7 @@ namespace chatbotrepo
         #endregion
 
         #region Constructors
-        public MonitorRepository()
-        {
-            _context = new ChatbotEntities();
-        }
-
-        public MonitorRepository(ChatbotEntities context)
+          public MonitorRepository(ChatbotEntities context)
         {
             _context = context;
         }
@@ -40,10 +35,7 @@ namespace chatbotrepo
 
         public ICollection<MonitorsTbl> DataFetch(int id)
         {
-            var monitors = (from m in _context.MonitorsTbls
-                            where m.monitor_id == id
-                            select m).ToList();
-            return monitors;
+            throw new NotImplementedException();
         }
 
         public ICollection<MonitorsTbl> DataFetch(int id1, int id2)

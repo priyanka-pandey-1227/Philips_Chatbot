@@ -13,11 +13,6 @@ namespace chatbotrepo
         #endregion
 
         #region Constructors
-        public OptionsRepository()
-        {
-            _context = new ChatbotEntities();
-        }
-
         public OptionsRepository(ChatbotEntities context)
         {
             _context = context;
@@ -28,10 +23,7 @@ namespace chatbotrepo
    
         public OptionsTbl GetById(int id)
         {
-            var option= (from o in _context.OptionsTbls
-                     where o.link_id == id
-                     select o).SingleOrDefault();
-            return option;
+            throw new NotImplementedException();
         }
 
         public OptionsTbl FindWhere(int questionid, int optionid)
@@ -45,10 +37,7 @@ namespace chatbotrepo
 
         ICollection<OptionsTbl> IDataFetch<OptionsTbl>.DataFetch(int id)
         {
-            var options = (from m in _context.OptionsTbls
-                           where m.question_id == id
-                           select m).ToList();
-            return options;
+            throw  new NotImplementedException();
         }
 
         public ICollection<OptionsTbl> DataFetch(int id1, int id2)
